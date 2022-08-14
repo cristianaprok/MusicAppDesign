@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabSelectedTextColor="@color/selected_color"
+            app:tabTextAppearance="@style/MyCustomTextAppearance"
+            app:tabTextColor="@color/white" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintBottom_toTopOf="@+id/relativeNotifi"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+        <RelativeLayout
+            android:id="@+id/relativeNotifi"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/avatar"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_20sdp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_20sdp">
+                <ImageView
+                    style="@style/ImageButton"
+                    android:src="@drawable/ic_pree"/>
+                <ImageView
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    style="@style/ImageButton"
+                    android:src="@drawable/ic_pause"/>
+                <ImageView
+                    style="@style/ImageButton"
+                    android:src="@drawable/ic_next"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
