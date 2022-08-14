@@ -1,5 +1,4 @@
 package com.example.mymusicapplication.screens.activities;
-import android.view.Gravity;
 
 import androidx.core.view.GravityCompat;
 import androidx.navigation.NavController;
@@ -12,7 +11,7 @@ import com.example.mymusicapplication.databinding.MainActivityBinding;
 
 public class MainActivity extends BaseActivity<MainActivityBinding> {
     private NavHostFragment _navHostFragment;
-    private NavController _navController;
+    public static NavController mNavController;
 
     @Override
     protected int getLayout() {
@@ -26,9 +25,9 @@ public class MainActivity extends BaseActivity<MainActivityBinding> {
 
     private void createNavController() {
         _navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_container_view);
-        _navController = _navHostFragment.getNavController();
+        mNavController = _navHostFragment.getNavController();
 
-        NavigationUI.setupWithNavController(binding.bottomNavigate, _navController);
+        NavigationUI.setupWithNavController(binding.bottomNavigate, mNavController);
         binding.imgMenu.setOnClickListener(view -> {
             binding.drawableLayout.openDrawer(GravityCompat.START);
         });

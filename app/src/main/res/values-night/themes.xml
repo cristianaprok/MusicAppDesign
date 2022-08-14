@@ -14,5 +14,7 @@
         <!-- Customize your theme here. -->
 
         <item name="android:windowBackground">@color/back_ground</item>
+        <item name="android:itemTextAppearance">@style/itemTextStyle.AppTheme</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
     </style>
 </resources>

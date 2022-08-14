@@ -44,6 +44,8 @@
             tools:text="kdfkd" />
 
         <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:id="@+id/imgMenuItem"
             style="@style/ImageButton"
             android:layout_alignBottom="@+id/txtTitle"
             android:layout_alignParentRight="true"

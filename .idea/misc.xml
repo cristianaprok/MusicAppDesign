@@ -43,7 +43,11 @@
         <entry key="app/src/main/res/drawable/custom_edittext.xml" value="0.182" />
         <entry key="app/src/main/res/layout/fragment_albums.xml" value="0.11822916666666666" />
         <entry key="app/src/main/res/layout/fragment_all_song.xml" value="0.21369622271993888" />
+        <entry key="app/src/main/res/layout/fragment_artists.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/fragment_details_album.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_genres.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.15579710144927536" />
+        <entry key="app/src/main/res/layout/fragment_notification_song.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/fragment_playlist.xml" value="0.2164855072463768" />
         <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.15579710144927536" />
         <entry key="app/src/main/res/layout/fragment_song.xml" value="0.15579710144927536" />
@@ -53,16 +57,20 @@
         <entry key="app/src/main/res/layout/layout_home_recently.xml" value="0.14285714285714285" />
         <entry key="app/src/main/res/layout/layout_hot_recommended.xml" value="0.15579710144927536" />
         <entry key="app/src/main/res/layout/layout_item_album.xml" value="0.1171875" />
+        <entry key="app/src/main/res/layout/layout_item_album_detail.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/layout_item_allsong.xml" value="0.14336372847011145" />
+        <entry key="app/src/main/res/layout/layout_item_artists.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/layout_item_genres.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/layout_item_home.xml" value="0.15579710144927536" />
         <entry key="app/src/main/res/layout/layout_item_hot_recommended.xml" value="0.11822916666666666" />
         <entry key="app/src/main/res/layout/layout_item_play_list.xml" value="0.11822916666666666" />
         <entry key="app/src/main/res/layout/layout_item_playlist_bottom.xml" value="0.11822916666666666" />
         <entry key="app/src/main/res/layout/layout_item_playlist_top.xml" value="0.2164855072463768" />
-        <entry key="app/src/main/res/layout/layout_item_recently.xml" value="0.11822916666666666" />
+        <entry key="app/src/main/res/layout/layout_item_recently.xml" value="0.2907251993815104" />
         <entry key="app/src/main/res/layout/main_activity.xml" value="0.1171875" />
         <entry key="app/src/main/res/layout/splash_activity.xml" value="0.16485507246376813" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.11822916666666666" />
+        <entry key="app/src/main/res/menu/menu_albums.xml" value="0.2537037037037037" />
       </map>
     </option>
   </component>

@@ -1,6 +1,7 @@
 package com.example.mymusicapplication.screens.fragment.songs;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.NonNull;
@@ -8,6 +9,7 @@ import androidx.annotation.Nullable;
 
 import com.example.mymusicapplication.R;
 import com.example.mymusicapplication.base.BaseFragment;
+import com.example.mymusicapplication.base.interfaces.IMenuItemAction;
 import com.example.mymusicapplication.databinding.FragmentAlbumsBinding;
 import com.example.mymusicapplication.databinding.FragmentAllSongBinding;
 import com.example.mymusicapplication.screens.adapter.song.RecyclerAlbum;
@@ -33,6 +35,9 @@ public class FragmentAlbums extends BaseFragment<FragmentAlbumsBinding, SongView
         super.onViewCreated(view, savedInstanceState);
         _adapter = new RecyclerAlbum();
         _adapter.updateItems(DummyData.getListSong(),viewModel);
+        _adapter.onItemActionMenu((id, title) ->  {
+            Log.d(TAG, "onViewCreated: id:="+id + "   title:= "+title);
+        });
 
         binding.recyclerAlbum.setAdapter(_adapter);
     }

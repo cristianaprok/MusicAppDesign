@@ -28,28 +28,44 @@
             android:background="@color/h181B2C"
             />
 
-        <TextView
-            android:id="@+id/txtTitle"
-            style="@style/TextNormal"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/line1"
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_alignTop="@+id/imgVideo"
+            android:gravity="center_vertical"
             android:layout_toEndOf="@+id/imgVideo"
-            android:text="@{song.title}" />
+            android:layout_alignBottom="@+id/imgVideo"
+            >
+            <TextView
+                style="@style/TextNormal"
+                android:text="@{song.title}"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+            <TextView
+                style="@style/TextNormal"
+                android:text="3:56"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                style="@style/ImageButton"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                app:drawableEndCompat="@drawable/ic_3_dots_horizontal" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/txtDescription"
-            style="@style/TextMedium"
-            android:text="@{song.artist}"
-            android:textColor="@color/h585A66"
-            android:layout_toEndOf="@+id/imgVideo"
-            android:layout_below="@+id/txtTitle"
-            android:layout_marginLeft="@dimen/_20sdp"
-            />
         <View
             style="@style/BgLine"
-            android:layout_alignLeft="@+id/txtDescription"
-            android:layout_below="@+id/txtDescription"
-            android:layout_marginTop="@dimen/_10sdp"/>
+            android:layout_toEndOf="@+id/imgVideo"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/imgVideo"/>
 
     </RelativeLayout>
 </layout>

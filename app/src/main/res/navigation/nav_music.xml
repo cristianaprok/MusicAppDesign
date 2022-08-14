@@ -19,4 +19,9 @@
         android:name="com.example.mymusicapplication.screens.fragment.FragmentSetting"
         android:label="FragmentSetting"
         tools:layout="@layout/fragment_setting"/>
+    <fragment
+        android:id="@+id/fragmentDetailAlbums"
+        android:name="com.example.mymusicapplication.screens.fragment.songs.FragmentDetailAlbums"
+        android:label="FragmentDetailAlbums"
+        tools:layout="@layout/fragment_details_album"/>
 </navigation>
